@@ -57,6 +57,9 @@ function checkDay(nowDate, lang) {
         case "en":
             var dane = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
             break;
+        case "es":
+            var dane = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+            break;
         default:
             var dane = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     }
@@ -84,6 +87,9 @@ function checkMonth(nowDate, lang) {
         case "en":
             var mjeseci = ['January','February','March','April','May','June','July','August','September','October','November','December'];
             break;
+        case "es":
+            var mjeseci = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+            break;
         default:
             var mjeseci = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
@@ -110,6 +116,9 @@ function timeOfDay(nowDate, lang) {
             case "en":
                 return "morning"
                 //break;
+            case "es":
+                return "mañana"
+                //break;
             default:
                 return "morning"
         }
@@ -121,6 +130,9 @@ function timeOfDay(nowDate, lang) {
             case "en":
                 return "afternoon"
                 //break;
+            case "es":
+                return "tarde"
+                //break;
             default:
                 return "afternoon"
         }
@@ -131,6 +143,13 @@ function timeOfDay(nowDate, lang) {
                 //break;
             case "en":
                 return "evening"
+                //break;
+            case "es":
+                if (h >= 18 && h < 20) {
+                    return "tarde"
+                } else {
+                    return "noche"
+                }
                 //break;
             default:
                 return "evening"

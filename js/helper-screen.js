@@ -143,7 +143,7 @@ function timeOfDay(nowDate, lang) {
                 return "tarde"
                 //break;
             case "ro":
-                return "dupamasa"
+                return "după-amiază"
                 //break;
             default:
                 return "afternoon"

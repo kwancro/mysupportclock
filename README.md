@@ -7,6 +7,7 @@ The supported languages for now are:
 - English
 - Croatian
 - Spanish
+- Romanian
 
 The idea is to keep it simple but any design suggestions or contributions are welcome. 
 

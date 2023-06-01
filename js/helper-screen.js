@@ -63,6 +63,12 @@ function checkDay(nowDate, lang) {
         case "ro":
             var dane = ['Duminică','Luni','Marți','Miercuri','Joi','Vineri','Sâmbătă'];
             break;
+        case "it":
+            var dane = ['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+            break;
+        case "pt":
+            var dane = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+            break;
         default:
             var dane = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     }
@@ -96,6 +102,12 @@ function checkMonth(nowDate, lang) {
         case "ro":
             var mjeseci = ['Ianuarie','Februarie','Martie','Aprilie','Mai','Iunie','Iulie','August','Septembrie','Octombrie','Noiembrie','Decembrie'];
             break;
+        case "it":
+            var mjeseci = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+            break;
+        case "pt":
+            var mjeseci = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+            break;
         default:
             var mjeseci = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
@@ -128,6 +140,10 @@ function timeOfDay(nowDate, lang) {
             case "ro":
                 return "dimineață"
                 //break;
+            case "it":
+                return "mattina"
+            case "pt":
+                return "manhã"
             default:
                 return "morning"
         }
@@ -145,6 +161,10 @@ function timeOfDay(nowDate, lang) {
             case "ro":
                 return "după-amiază"
                 //break;
+            case "it":
+                return "pomeriggio"
+            case "pt":
+                return "tarde"
             default:
                 return "afternoon"
         }
@@ -166,6 +186,10 @@ function timeOfDay(nowDate, lang) {
             case "ro":
                 return "seară"
                 //break;
+            case "it":
+                return "sera"
+            case "pt":
+                return "noite"
             default:
                 return "evening"
         }
